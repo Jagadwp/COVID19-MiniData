@@ -1,6 +1,6 @@
 {
-  "name": "covidminidata",
-  "version": "1.0.0",
+  "name": "COVID19-MiniData",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
