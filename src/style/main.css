@@ -1,0 +1,327 @@
+body {
+    font-family: 'Montserrat', 'Ubuntu', sans-serif;
+    background-color: #fff;
+    color: #343a40;
+    
+}
+
+#title {
+    background-color: #fdfd55;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
+
+.container-fluid {
+    padding: 0 5%;
+}
+
+h1 {
+    font-family: 'Montserrat', 'Ubuntu', sans-serif;
+    font-size: 3.5rem;
+    line-height: 1.5;
+    font-weight: 900;
+}
+
+h3, #tips h4{
+    font-weight: bold;
+}
+
+p {
+    color: #8f8f8f;
+}
+
+/* navigation */
+
+.navbar a {
+    color: #343a40;
+}
+.navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-left: 6%;
+}
+.nav-item {
+    padding: 0 5px;
+}
+.nav-link {
+    font-size: 1rem;
+    font-weight: 300;
+}
+.time-box {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    font-weight: 300;
+    margin: 0;
+    font-size: 1rem;
+}
+.time-data {
+    margin-right: 3vw;
+}
+
+/* carousel*/
+#silderTopic {
+    text-align: left;
+}
+#silderTopic h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.5;
+}
+#silderTopic em {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+.carousel-item {
+    padding: 8% 15%;
+}
+.carousel-inner {
+    height: 400px;
+    background: #fdfd55 url("../images/corona19_2.png")80% 1vw / 30% 80% no-repeat;    
+    color: #343a40;
+}
+
+/* statistik Indonesia */
+.flag-icon {
+    max-height: 35px; 
+    object-fit: contain;
+    margin-right: 10px; 
+}
+.stat-container {
+    border-radius: 8px;
+    padding: 7% 5%;
+    margin: 0;
+}
+.stat-box-container {
+    margin-top: 20px;
+}
+.stat-box {
+    padding: 0 2% 4%;
+}
+.stat-box-header {
+    padding: 2%;
+    width: 100%;
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+}
+.stat-box-header h3{
+    font-size: 1.75rem;
+}
+.stat-data {
+    color: white;
+    padding: 7% 12%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px 10px;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+.stat-data h4 {
+    font-size: 1.5rem;
+}
+.stat-data em {
+    font-size: 0.75rem;
+}
+
+/* Foreign Search */
+
+#cta {
+    background: #fdfd55 url("../images/covid19.png") 88% 28% / 30% 80% no-repeat;
+    color: #343a40;
+    padding: 7% 15%;
+    text-align: left;
+
+}
+.cta-heading {
+    font-weight: 900;
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+/* tips */
+
+#tips {
+    padding: 7% 100px;
+    text-align: center;
+}
+
+.tips-box {
+    padding: 3% 0;
+}
+.tips-box-header {
+    width: 100%;
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+}
+.tips-card {
+    padding-top: 35px;
+    border-radius: 0px;
+    border: 0;
+}
+.tips-image {
+    max-width: 150px; 
+    object-fit: contain;    
+}
+
+
+/* footer */
+
+#footer {
+    background-color: #343a40;
+    text-align: center;
+    padding-bottom: 1px;
+}
+
+#footer p {
+    color: #fff;
+    font-weight: 300;
+}
+
+#footer i {
+    margin: 30px 15px 20px;
+}
+.fab {
+    color: #fff;
+}
+
+/* css breakpoint */
+@media screen and (max-width: 767px) {
+    /* md */
+    .carousel-inner {
+        height: 350px;
+        background: #fdfd55 url("../images/corona19_2.png")80% 5vw / 30% 60% no-repeat;    
+    }
+    .navbar-brand {
+        font-size: 1rem;
+        margin: 1px;
+    }
+    .time-box {
+        font-size: 0.6rem;
+    }
+    #cta {
+        background: #fdfd55 url("../images/covid19.png") 88% 12% / 40% 40% no-repeat;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    /* navbar sm*/
+    .navbar-toggler {
+        font-size: 0.75rem;
+    }
+    .navbar-brand {
+        font-size: 0.8rem;
+        margin: 1px;
+    }
+    .nav-link {
+        font-size: 0.5rem;
+        padding: .25rem 1rem
+    }
+    .time-box {
+        font-size: 0.4rem;
+    }
+    .time-data {
+        margin-right: 1vw;
+    
+    }
+
+    /* carousel sm*/
+    #silderTopic h2 {
+        font-size: 1rem;
+        line-height: 0;
+    }
+    #silderTopic em {
+        font-size: 0.25rem;
+    }
+    .carousel-item {
+        padding: 19% 15%;
+    }
+    .carousel-inner {
+        height: 175px;
+        background: #fdfd55 url("../images/corona19_2.png")80% 1vw / 30% 80% no-repeat;    
+    }
+
+    /* statistik indonesia sm*/
+    .flag-icon {
+        max-height: 25px;   
+    }
+    .stat-container {
+        padding: 15% 15%;
+    }
+    .stat-box-container {
+        margin-top: 20px;
+    }
+    .stat-box-header h3 {
+        font-size: 1.25rem;
+    }
+    .stat-data {
+        font-size: 0.8rem;
+        margin-bottom: 20px;
+    }
+    .stat-data h4 {
+        font-size: 1rem;
+    }
+    .stat-data em {
+        font-size: 0.5rem;
+    }
+
+    /* search sm */
+    .cta-heading {
+        font-size: 1.25rem;
+        margin-bottom: 20px;
+    }
+
+    /* tips sm*/
+    #tips {
+        padding: 10% 15%;
+    }
+    #tips h3 {
+        font-size: 1.25rem;
+    }
+    .tips-card {
+        padding-top: 15px;
+    }
+    .tips-box-header {
+        margin-bottom: 20px;
+    }
+
+    /* footer */
+    #footer p {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .stat-data h4{
+        font-size: 0.9rem;
+    }
+    .stat-data{
+        font-size: 0.7rem;
+    }
+    .stat-data em {
+        font-size: 0.3rem;
+    }
+        
+}
+
+
+
+/*
+
+@media (max-width: 1080px) {
+    .stat-data {
+        color: white;
+        padding: 7% 12%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 20px 10px;
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+}  */
+
+
+
+
